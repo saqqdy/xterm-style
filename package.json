@@ -1,26 +1,22 @@
 {
 	"name": "xterm-style",
 	"description": "xterm样式",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"scripts": {
 		"eslint": "eslint --fix --ext .vue,.js",
-		"prettier": "npx prettier --write src",
-		"lib": "sh build/lib.sh",
-		"docs": "sh ./bin/docs.sh --docs",
-		"push": "sh ./bin/publish.sh",
-		"pub": "sh ./bin/publish.sh --deploy"
+		"prettier": "prettier --write \"**/*.{js,ts,sh,json,md}\""
 	},
+	"files": [
+		"config",
+		"index.js"
+	],
 	"main": "index.js",
-	"dependencies": {
-	},
+	"dependencies": {},
 	"devDependencies": {
-		"@babel/cli": "7.10.5",
-		"@babel/core": "7.11.1",
-		"@babel/preset-env": "7.11.0",
-		"eslint": "7.6.0",
-		"jsdoc-to-markdown": "^6.0.1",
-		"prettier": "^2.0.5",
-		"uglify-js": "^3.10.1"
+		"@saqqdy/prettier-config": "^1.0.4",
+		"eslint": "7.32.0",
+		"eslint-config-sets": "^1.4.0",
+		"prettier": "^2.0.5"
 	},
 	"repository": {
 		"type": "git",
