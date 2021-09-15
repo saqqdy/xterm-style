@@ -6,6 +6,7 @@
 [![David deps][david-image]][david-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
+[![License][license-image]][license-url]
 
 [npm-image]: https://img.shields.io/npm/v/xterm-style.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/xterm-style
@@ -19,8 +20,10 @@
 [snyk-url]: https://snyk.io/test/npm/xterm-style
 [download-image]: https://img.shields.io/npm/dm/xterm-style.svg?style=flat-square
 [download-url]: https://npmjs.org/package/xterm-style
+[license-image]: https://img.shields.io/badge/License-MIT-yellow.svg
+[license-url]: LICENSE
 
-# 安装依赖
+## 安装依赖
 
 ```shell
 # 通过npm安装
@@ -29,21 +32,21 @@ npm install -S xterm-style
 yarn add xterm-style
 ```
 
-# 使用
+## 使用
 
-## 配置说明
+### 配置说明
 
 xterm-style 目前包含了下面这几套配置
 
 -   `common`: 常规风格
 
-## 引入方法
+### 引入方法
 
 ```js
 import { Terminal } from 'xterm'
 import { common as xtermTheme } from 'xterm-style'
 const term = new Terminal({
-	theme: xtermTheme
-	// ...
+    theme: xtermTheme
+    // ...
 })
 ```
